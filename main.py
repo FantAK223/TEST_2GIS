@@ -7,10 +7,9 @@ class Bird(ABC):
 
     def __init__(self, IsFull):
         self.__IsFull = IsFull
-
     # приватный метод для хранения булевой переменной,
     # отвечающей за внутреннее состояние воробья
-
+    
     def __SetNewDecision__(self, ExternalFactor):
         data = ExternalFactor.GetDicisionAction(self.__IsFull)
         self.__DicisionAction = data[0]
